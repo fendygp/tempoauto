@@ -56,11 +56,12 @@ worker,started,timeSpentSeconds,originTaskId,WorkType,comment
 
 Open main.go and configure these variables near the top:
 
+```
 csvFile := "worklog.csv"                // Input CSV file
 jiraUrl := "https://your-jira-url/rest/tempo-timesheets/4/worklogs/" // Change to your Tempo API endpoint
 email := "your-email"                        // Your Jira/Tempo account email/user
 passEmail := "your-api-token-or-password"    // API token or password for authentication
-
+```
 Note:  
 - For Atlassian Cloud, use API token ([generate here](https://id.atlassian.com/manage-profile/security/api-tokens)) instead of your password.
 
