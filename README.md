@@ -40,7 +40,7 @@ Example `worklog_1707.csv`:
 worker,started,timeSpentSeconds,originTaskId,WorkType,comment
 000001,2025-07-17T07:30:00.000,5400,4445761,Doa+BriefingPagi,Briefing dan doa pagi bersama tim.
 000001,2025-07-17T09:00:00.000,7200,4445721,Development,Mengembangkan fitur baru dan perbaikan bug.
-...
+```
 
 - worker: Your Jira/Tempo user or employee ID
 - started: Start time, ISO format (YYYY-MM-DDTHH:MM:SS.000)
