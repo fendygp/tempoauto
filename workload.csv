@@ -1,0 +1,5 @@
+worker,started,timeSpentSeconds,originTaskId,WorkType,comment
+00000001,2025-07-07T07:30:00.000,5400,4445761,Doa+BriefingPagi,Briefing dan doa pagi bersama tim.
+00000001,2025-07-07T09:00:00.000,7200,4445767,Dokumentasi,Menulis dan update dokumentasi teknis project.
+00000001,2025-07-07T11:00:00.000,3600,4445721,Development,Coding dan review modul aplikasi.
+00000001,2025-07-07T12:00:00.000,3600,4445711,Ishome,Waktu istirahat dan makan siang.
