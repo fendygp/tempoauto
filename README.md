@@ -13,13 +13,13 @@ Each worklog is sent as a separate POST request, and all results (including erro
 ---
 
 ## 📦 File Structure
-
+```
 .
 ├── main.go                # The main Go script (edit credential variables at the top)
 ├── worklog.csv            # Example input CSV file (copy and edit for your own activities)
 ├── worklog_result.csv     # Output CSV file (generated automatically; do not edit manually)
 └── README.md              # This documentation
-
+```
 ---
 
 ## 🛠️ Prerequisites
@@ -36,7 +36,8 @@ Each worklog is sent as a separate POST request, and all results (including erro
 
 Example `worklog_1707.csv`:
 
-```csv
+```
+csv
 worker,started,timeSpentSeconds,originTaskId,WorkType,comment
 000001,2025-07-17T07:30:00.000,5400,4445761,Doa+BriefingPagi,Briefing dan doa pagi bersama tim.
 000001,2025-07-17T09:00:00.000,7200,4445721,Development,Mengembangkan fitur baru dan perbaikan bug.
