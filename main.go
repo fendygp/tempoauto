@@ -8,9 +8,12 @@ import (
 	"fmt"
 	"io"
 	"io/ioutil"
+	"log"
 	"net/http"
 	"os"
 	"strconv"
+
+	"github.com/spf13/viper"
 )
 
 type WorkTypeAttr struct {
@@ -60,10 +63,18 @@ type TempoResponse struct {
 }
 
 func main() {
+
+	// load config from json
+	err := LoadFromJson()
+	if err != nil {
+		log.Fatal(err)
+	}
 	csvFile := "workload.csv"
 	jiraUrl := "https://xx.xx.xx.xx/rest/tempo-timesheets/4/worklogs/"
-	email := "xxxx" // Ganti dengan email Atlassian-mu
-	passEmail := "xxxx"
+
+	fmt.Println("mendapatkan email dan password dari yaml file")
+	email := viper.GetString("email")
+	passEmail := viper.GetString("passEmail")
 
 	auth := email + ":" + passEmail
 	authHeader := "Basic " + base64.StdEncoding.EncodeToString([]byte(auth))
